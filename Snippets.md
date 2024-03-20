@@ -1,5 +1,11 @@
 
+use find component instead of cast  
+`Comp = OtherActor->FindComponentByClass<USAttributeComponent>();`
+`Comp = Cast<USAttributeComponent>(OtherActor->GetComponentByClass(USAttributeComponent::StaticClass()));`
 
+Category="User Options" "User Options - Functions" "- Events"
+"Information
+AdvancedDisplay
 
 Steam file  
 `$ MyGame\Binaries\Win64  echo "480" >> steam_appid.txt`
