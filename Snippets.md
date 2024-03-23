@@ -1,5 +1,6 @@
 Vector Math  
 ```cpp
+// Target - start
 FVector Direction = TargetActor->GetActorLocation() - MuzzleLocation;
 FRotator MuzzleRotation = Direction.Rotation();
 GetWorld()->SpawnActor(ProjectileClass, MuzzleLocation, MuzzleRotation, SpawnParams);
