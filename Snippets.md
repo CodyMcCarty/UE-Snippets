@@ -1,7 +1,9 @@
-Vector Math
+Vector Math  
+```cpp
 FVector Direction = TargetActor->GetActorLocation() - MuzzleLocation;
 FRotator MuzzleRotation = Direction.Rotation();
 GetWorld()->SpawnActor(ProjectileClass, MuzzleLocation, MuzzleRotation, SpawnParams);
+```
 
 use find component instead of cast  
 `Comp = OtherActor->FindComponentByClass<USAttributeComponent>();`
