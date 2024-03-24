@@ -1,3 +1,14 @@
+```cpp
+void USAttributeComponent::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent)
+{
+	Super::PostEditChangeProperty(PropertyChangedEvent);
+	if (PropertyChangedEvent.GetPropertyName() == GET_MEMBER_NAME_CHECKED(USAttributeComponent, HealthMax))
+	{
+		Health = HealthMax; 
+	}
+}
+```
+
 Vector Math  
 ```cpp
 // Target - start
