@@ -29,7 +29,8 @@ Steam file
 `$ MyGame\Binaries\Win64  echo "480" >> steam_appid.txt`
 
 Get all actors  
-`TActorRange<AController>(GetWorld())` > `UGameplayStatics::GetAllActorsOfClass()`
+`TActorRange<AController>(GetWorld())` > `(TActorIterator<AMyAICharacter> It(GetWorld()); It; ++It) ter* Bot = *It;` > `UGameplayStatics::GetAllActorsOfClass()`  
+`for (const AMyAICharacter* Bot : TActorRange<AMyAICharacter>(GetWorld()))`
 
 Which Client? they're all Client 0    
 ```cpp
