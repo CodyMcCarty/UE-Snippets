@@ -1,3 +1,8 @@
+Blueprint output pin
+```cpp
+UFUNCTION(BlueprintCallable)
+bool Foo(float& OutDamage);
+```
 
 ---
 Interfaces. [Steve's write up](https://www.stevestreeting.com/2020/11/02/ue4-c---interfaces---hints-n-tips/). 
