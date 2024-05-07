@@ -1,3 +1,7 @@
+
+
+
+---
 Blueprint output pin
 ```cpp
 UFUNCTION(BlueprintCallable)
@@ -41,8 +45,13 @@ GetWorld()->SpawnActor(ProjectileClass, MuzzleLocation, MuzzleRotation, SpawnPar
 
 ---
 use find component instead of cast  
-`Comp = OtherActor->FindComponentByClass<USAttributeComponent>();`
-`Comp = Cast<USAttributeComponent>(OtherActor->GetComponentByClass(USAttributeComponent::StaticClass()));`
+```cpp 
+Comp = OtherActor->FindComponentByClass<USAttributeComponent>();    
+Comp = Cast<USAttributeComponent>(OtherActor->GetComponentByClass(USAttributeComponent::StaticClass()));
+
+// Most Getters have a templated version
+Get<t>()
+```
 
 ---
 Category="User Options" "User Options - Functions" "- Events"
@@ -66,5 +75,37 @@ GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT(
 ```
 
 ---
-binding input to a function in another class  
-`EnhancedInputComp->BindAction(Input_Interact, ETriggerEvent::Triggered, this->InteractionComp.Get(), &USInteractionComp::PrimaryInteract);`
+Macro for delegate
+```cpp
+// Original
+AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AuraAttributeSet->GetHealthAttribute()).AddLambda(
+    [this](const FOnAttributeChangeData& Data)
+    {
+        OnHealthChanged.Broadcast(Data.NewValue);
+    }
+);
+
+// Macro
+#define BIND_CALLBACK( AttributeName) AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AuraAttributeSet->Get##AttributeName##Attribute()).AddLambda( \
+    [this](const FOnAttributeChangeData& Data) \
+    {\
+        On##AttributeName##Changed.Broadcast(Data.NewValue);
+    }
+);
+BIND_CALLBACK(Health);
+BIND_CALLBACK(MaxHealth);
+BIND_CALLBACK(Mana);
+#undef BIND_CALLBACK S
+```
+
+---
+binding input to a function in another class | Lambda
+```cpp
+EnhancedInputComp->BindAction(Input_Interact, ETriggerEvent::Triggered, this->InteractionComp.Get(), &USInteractionComp::PrimaryInteract);
+
+// Lambda delegate
+MyDelegate.AddLambda([this](const FGameplayTagContainer& Tags)
+    {
+        // Do something with Tags
+    });
+```
