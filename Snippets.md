@@ -1,5 +1,9 @@
-
-
+---
+Lighting  
+SnowWhite={Color=0.85, Metal=0, Rough=0.3}  
+CoalBlack{Color=0.04, Metal=0, Rough=0.3}  
+127Grey={Color=0.18, Metal=0, Rough=0.3} /** Exposure is not linear, 3.5 4.5 9 18 36 72 95 */   
+Chrome={Color=0.9, Metal=1, Rough=0.05}   
 
 ---
 Blueprint output pin
