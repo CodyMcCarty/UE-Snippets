@@ -13,7 +13,7 @@ FString Str 	= StaticEnum<EShape>()->GetValueAsString(ShapeA); 				// EShape::Ca
 FText Text 	= StaticEnum<EShape>()->GetDisplayNameTextByValue(static_cast<int64>(ShapeA)); 	// Capsule
 FName Name 	= StaticEnum<EShape>()->GetNameByValue(static_cast<int64>(ShapeA)); 		// EShape::Capsule
 FString StrA 	= StaticEnum<EShape>()->GetNameStringByValue(static_cast<int64>(ShapeA)); 	// Capsule
-// ect.
+// ect. GetNameByIndex is prolly the most performant if the index is known. use GetIndexByName to get the index
 ```  
 
 ---
