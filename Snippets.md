@@ -1,4 +1,22 @@
 ---
+Enum to String  
+```cpp
+// Note, I believe this doesn't work if cooked.
+const ECollisionChannel CurrentChannel = static_cast<ECollisionChannel>(i);
+FString Str 	= StaticEnum<ECollisionChannel>()->GetValueAsString(static_cast<ECollisionChannel>(i));
+Str 		= StaticEnum<ECollisionChannel>()->GetValueAsString(CurrentChannel)
+
+Capsule UMETA(DisplayName = "Capsule"), // add this to use with created enums.
+// alternatives
+EShape ShapeA = EShape::Capsule;
+FString Str 	= StaticEnum<EShape>()->GetValueAsString(ShapeA); 				// EShape::Capsule
+FText Text 	= StaticEnum<EShape>()->GetDisplayNameTextByValue(static_cast<int64>(ShapeA)); 	// Capsule
+FName Name 	= StaticEnum<EShape>()->GetNameByValue(static_cast<int64>(ShapeA)); 		// EShape::Capsule
+FString StrA 	= StaticEnum<EShape>()->GetNameStringByValue(static_cast<int64>(ShapeA)); 	// Capsule
+// ect.
+```  
+
+---
 Lighting  
 SnowWhite={Color=0.85, Metal=0, Rough=0.3}  
 CoalBlack{Color=0.04, Metal=0, Rough=0.3}  
