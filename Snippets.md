@@ -38,7 +38,7 @@ void Interact(APawn* InstigatorPawn);
 
 Interact_Implementation() // bc of BlueprintNativeEvent
 
-if (HitActor->Implements<USGameplayInterface>()) // "U" not "I" 
+if (HitActor->Implements<USGameplayInterface>()) // "U" not "I". without check returns garbage
 {
     ISGameplayInterface::Execute_Interact(HitActor, MyPawn); // HitActor calls Interact(MyPawn)
 }
