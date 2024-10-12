@@ -1,4 +1,15 @@
 ---
+Change the return of a getter  
+```cpp
+ULyraAbilitySystemComponent* GetLyraAbilitySystemComponent() const;
+
+ULyraAbilitySystemComponent* ULyraAttributeSet::GetLyraAbilitySystemComponent() const
+{
+	return Cast<ULyraAbilitySystemComponent>(GetOwningAbilitySystemComponent());
+}
+```
+
+---
 Enum to String  
 ```cpp
 // Note, I believe this doesn't work if cooked.
