@@ -39,6 +39,8 @@ Blueprint output pin
 ```cpp
 UFUNCTION(BlueprintCallable)
 bool Foo(float& OutDamage);
+//vs ref input
+bool Foo(UPARAM(ref) float& OutDamage);
 ```
 
 ---
