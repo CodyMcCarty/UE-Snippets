@@ -1,4 +1,10 @@
 ---
+Debug macro to prevent the compiler from optimizing code away   
+```cpp
+UE_DISABLE_OPTIMIZATION
+```
+
+---
 Change the return of a getter  
 ```cpp
 ULyraAbilitySystemComponent* GetLyraAbilitySystemComponent() const;
