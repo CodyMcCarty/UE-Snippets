@@ -1,4 +1,12 @@
 ---
+Get crash data in packaged game   
+Ari's crashing with style 10:00min  
+Editor Preferences → General - Experimental → Blueprints → Blueprint Break on Exceptions  
+ScriptStackOnWarnings=true // todo find the better way to enable  
+https://dev.epicgames.com/community/learning/tutorials/dXl5/advanced-debugging-in-unreal-engine  
+
+
+---
 Debug macro to prevent the compiler from optimizing code away   
 ```cpp
 UE_DISABLE_OPTIMIZATION
