@@ -6,14 +6,14 @@ Common UI Plugin
 ProjectSettings.Engine.GeneralSettings.GameViewportClientClass = CommonGameViewportClient.  
 follow [CommonUIQuickStart](https://dev.epicgames.com/documentation/en-us/unreal-engine/common-ui-quickstart-guide-for-unreal-engine)  
 
-Make CommonActivatableWidget W_Layout. Can be a normal UserWidget, CUW(Narritive, Lyra), or CAW(UELive, Cropout)  Names: UI_Layer_Game-Cropout, PrimaryGameLayout.h, W_OverallUILayout, WBP_PrimaryLayout, WBP_Hud, WBP_NarrativeHUD
-Make Common User Widget W_NotificationBox
+Make CommonActivatableWidget W_Layout. Can be a normal UserWidget, CUW(Narritive, Lyra), or CAW(UELive, Cropout)  Names: UI_Layer_Game-Cropout, PrimaryGameLayout.h, W_OverallUILayout, WBP_PrimaryLayout, WBP_Hud, WBP_NarrativeHUD  
+Make Common User Widget W_NotificationBox  
 add SafeZone attach an Overlay, attach 4 CommonActivatableWidgetStacks and W_NotificationBox to the Overlay.  
 :exclamation: Layers allow showing and hiding widgets in order to avoid having a tighlighly coupled and hard to maintain system of widget telling other widgets to hide/show.  ie. Menu, inventory, pause, dialogue.  
-name the CAWSs Game_Stack(HUD elements), GameMenu_Stack(Inventory, Dialogue, Maps), Menu_Stack(Settings), Modal_Stack(Confirmation and errors). // lower is on top
+name the CAWSs Game_Stack(HUD elements), GameMenu_Stack(Inventory, Dialogue, Maps), Menu_Stack(Settings), Modal_Stack(Confirmation and errors). // lower is on top  
 CAWSs and Overlay Fill Horizontal and Vertical. Visibility=NotHitTestableSelf.  TODO: play with Overlay's SafeAreaScale, Game_Stack.RootContentWidgetClass is default WBP?    
 :rocket: Hit testable is expensive. if it doesn't need click, HitTestInvisible or SelfHitTestInvisible. TopLevel, Behavior.Visibility.  
-:rocket: CanvasPanel(multiple draw calls) and Overlay, to a lesser degree, is expensive.  Use GridPanel with nudge when possible?
+:rocket: CanvasPanel(multiple draw calls) and Overlay, to a lesser degree, is expensive.  Use GridPanel with nudge when possible?  
 In Event Graph make Custom Event for Push and Remove(GetActiveWidget).  Push if !GetActiveWidget == widget.  
 
 
