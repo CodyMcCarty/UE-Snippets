@@ -1,7 +1,7 @@
 ---
-remove elements from a TArray
-for (auto It = Stacks.CreateIterator(); It; ++It) // is the Unreal way to deal with TArray and is BP friendly.
-for (int32 i = Stacks.Num() - 1; i >= 0; i--) // is faster with 1000+ elements. Stop doing this so much.
+remove elements from a TArray    
+for (auto It = Stacks.CreateIterator(); It; ++It) // is the Unreal way to deal with TArray and is BP friendly.    
+for (int32 i = Stacks.Num() - 1; i >= 0; i--) // is faster with 1000+ elements. Stop doing this so much.    
 
 ---
 Get crash data in packaged game   
