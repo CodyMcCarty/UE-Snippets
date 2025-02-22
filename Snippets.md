@@ -1,4 +1,27 @@
 ---
+Casey's/UE Switch style. 
+```cpp
+switch (BestPos.X)
+{
+case aINT32_MAX // collon, but error with github's .md
+	{
+		BestIndex = INT32_MAX;
+	}
+	break;
+case INDEX_NONE
+	{
+		BestIndex = INDEX_NONE;
+	}
+	break;
+default
+	{
+		BestIndex = BestPos.Y * GridSize.X + BestPos.X;
+	}
+	break;
+}
+```
+
+---
 remove elements from a TArray    
 for (auto It = Stacks.CreateIterator(); It; ++It) // is the Unreal way to deal with TArray and is BP friendly.    
 for (int32 i = Stacks.Num() - 1; i >= 0; i--) // is faster with 1000+ elements. Stop doing this so much.    
