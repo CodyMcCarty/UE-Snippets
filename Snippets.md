@@ -140,7 +140,7 @@ Steam file
 
 ---
 Get all actors  
-`TActorRange<AController>(GetWorld())` > `(TActorIterator<AMyAICharacter> It(GetWorld()); It; ++It) ter* Bot = *It;` > `UGameplayStatics::GetAllActorsOfClass()`  
+`TActorRange<AController>(GetWorld()) // Doesn't work with subclasses?` > `for(TActorIterator<AMyAICharacter> It(GetWorld()); It; ++It) ter* Bot = *It;` > `UGameplayStatics::GetAllActorsOfClass()`  
 `for (const AMyAICharacter* Bot : TActorRange<AMyAICharacter>(GetWorld()))`
 
 ---
