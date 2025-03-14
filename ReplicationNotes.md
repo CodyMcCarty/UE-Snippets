@@ -81,3 +81,30 @@ Pie1 Pawn_0 is the server's proxy on client 1's machine.
 				Pie2 Pawn_2
 			}
 ```
+Engine Notes:
+```cpp
+bool AController::IsLocalController() const
+{
+	const ENetMode NetMode = GetNetMode();
+
+	if (NetMode == NM_Standalone)
+	{
+		// Not networked.
+		return true;
+	}
+	
+	if (NetMode == NM_Client && GetLocalRole() == ROLE_AutonomousProxy)
+	{
+		// Networked client in control.
+		return true;
+	}
+
+	if (GetRemoteRole() != ROLE_AutonomousProxy && GetLocalRole() == ROLE_Authority)
+	{
+		// Local authority in control.
+		return true;
+	}
+
+	return false;
+}
+```
