@@ -1,4 +1,7 @@
 ---
+Drag select actors in editor? Ctrl + Alt + LMB
+
+---
 DebugCam https://twitter.com/flassari/status/1631925402171056128 
 
 
