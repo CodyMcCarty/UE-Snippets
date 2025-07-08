@@ -44,7 +44,7 @@ https://dev.epicgames.com/community/learning/tutorials/dXl5/advanced-debugging-i
 ---
 Debug macro to prevent the compiler from optimizing code away   
 ```cpp
-UE_DISABLE_OPTIMIZATION
+UE_DISABLE_OPTIMIZATION / UE_ENABLE_OPTIMIZATION
 ```
 
 ---
