@@ -19,6 +19,8 @@
 - Some W_ have 2 prepasses. ScaleBox, SizeBox, RichText(sometimes), Text(with AutoWrap, wrap at pixel size=multi line.
   - e.g. if heiarchy is Overlay->SizeBox->ScaleBox->Text, replacing that with Overlay->Overlay->Overlay->Text goes from 500us to 25us.
 - Templating: Use material functions to create an "interface" between materials. i.e. params have the same name across different materials so the BP logic remains the same.
+- Dynamic sizing & Size to content: wrap box, scroll box, marquee scrolling (ticker tap) in CommonText 12:00[20 umg](https://dev.epicgames.com/community/learning/talks-and-demos/MPZq/unreal-engine-20-things-you-should-be-using-in-unreal-motion-graphics-umg-unreal-fest-gold-coast-2024).
 
 # Common UI
-- Com Visual Attachment doesn't take up layout space (notification, controller button, 
+- Com Visual Attachment doesn't take up layout space (notification, controller button)
+- Common Button & Text are amazing.
