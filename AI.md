@@ -16,3 +16,7 @@ How do I communicate to ST:
 
 How does the ST comm with other classes?:
 - Custom Task
+
+---
+EQS
+Tom: Environment Queries for smarter movement, 
