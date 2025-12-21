@@ -12,5 +12,7 @@ How do I Send a tag event from the ST to an actor, like the reverse of ST->SendT
 ---
 How do I communicate to ST:
 - call SendStateTreeEvent(EventTag, InstStruct Payload, FName EventOrigin = None)
+- Custom Task
 
 How does the ST comm with other classes?:
+- Custom Task
