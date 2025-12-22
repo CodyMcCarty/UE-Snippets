@@ -3,8 +3,9 @@
 ---
 How to get the ai pawn to rotate better and not snappy?  
 MoveComp.UseControllerDesiredRotation=true // see doc  
-MoveComp.RotationRate.Z=360 // this is per sec.
+MoveComp.RotationRate.Z=360 // this is per sec.  
 Character.UseControllerRotationYaw=false  
+ABP.BlendSpace.TargetWeightInterpolationSpeedPer=8.0 // this is more to do with foot sliding.  
 
 ---
 Task categories:  
