@@ -1,6 +1,12 @@
 ---
 
 ---
+How to get the ai pawn to rotate better and not snappy?  
+MoveComp.UseControllerDesiredRotation=true // see doc  
+MoveComp.RotationRate.Z=360 // this is per sec.
+Character.UseControllerRotationYaw=false  
+
+---
 Task categories:  
 Input, Output, regular instance editable(Bindable and TextBox). Context or something?
 
@@ -19,4 +25,4 @@ How does the ST comm with other classes?:
 
 ---
 EQS
-Tom: Environment Queries for smarter movement, 
+Tom: (11)Environment Queries for smarter movement, Adding Sight...9:20
