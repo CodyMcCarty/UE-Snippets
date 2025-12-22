@@ -1,4 +1,10 @@
 ---
+Asserts & EDD, error driven development. Lots of bugs from not assigning vars in BP and this should be done.  
+`if(ensureMsgf(thing, TEXT("Behavior Tree is nullptr! Please assign BehaviorTree in your AI Controller."))) {}`  
+format is "The Problem! Solution"  
+Break point at c++ code. & Logs the file, class, ln., msg. IIRC it should log the call stack as well.  
+
+---
 Drag select actors in editor? Ctrl + Alt + LMB
 
 ---
