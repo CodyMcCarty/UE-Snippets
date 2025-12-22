@@ -11,22 +11,28 @@ Character.UseControllerRotationYaw=false
 ABP.BlendSpace.TargetWeightInterpolationSpeedPer=8.0 // this is more to do with foot sliding.  
 
 ---
-Task categories:  
-Input, Output, regular instance editable(Bindable and TextBox). Context or something?
+What are the categories in a stt statetree task? 
+Input, Output, Context(actor or AIC), regular instance editable(Bindable and TextBox). 
 
 ---
 How do I get the debug text to follow the actor around?
 How do I bind to a property function like GetActorLocation(Actor) in a task, like move to, that has an "input" vector?
 How do I Send a tag event from the ST to an actor, like the reverse of ST->SendTagEvent?
+Is IGameplayTagAssetInterface used anywhere?
 Would I need a cool down in ST, and how?
+What's up with Evaluators?
+What's up with Global Tasks? Source of info?
 
 ---
-How do I communicate to ST:
+Is there a gpTag interface to allows better communication between BPs?
+How do I use the event payload?
+Hows do I comm between ST and other actors?
+- gameplay tags
+- Custom STTask
+  
+How do I communicate to ST?
 - call SendStateTreeEvent(EventTag, InstStruct Payload, FName EventOrigin = None)
-- Custom Task
 
-How does the ST comm with other classes?:
-- Custom Task
 
 ---
 EQS
