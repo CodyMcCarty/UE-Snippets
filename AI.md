@@ -18,6 +18,7 @@ Input, Output, regular instance editable(Bindable and TextBox). Context or somet
 How do I get the debug text to follow the actor around?
 How do I bind to a property function like GetActorLocation(Actor) in a task, like move to, that has an "input" vector?
 How do I Send a tag event from the ST to an actor, like the reverse of ST->SendTagEvent?
+Would I need a cool down in ST, and how?
 
 ---
 How do I communicate to ST:
@@ -29,5 +30,4 @@ How does the ST comm with other classes?:
 
 ---
 EQS
-Tom: (11)Environment Queries for smarter movement, Adding Sight...9:20, (12)EQS to find bot spawn, GameMode with custom AI spawn
-assignment 4
+Tom: (11)Environment Queries for smarter movement, Adding Sight...9:20, (12)EQS to find bot spawn, GameMode with custom AI spawn, (15)Assignme4, more...
