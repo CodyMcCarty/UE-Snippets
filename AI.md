@@ -1,4 +1,7 @@
 ---
+---
+My Spawned ai is not moving around and using the behavior tree or state tree?  
+`Character.AutoPossessAI=EAutoPossessAI::PlacedInWorldOrSpawned`. in constructor or BP defaults.  
 
 ---
 How to get the ai pawn to rotate better and not snappy?  
@@ -26,4 +29,5 @@ How does the ST comm with other classes?:
 
 ---
 EQS
-Tom: (11)Environment Queries for smarter movement, Adding Sight...9:20
+Tom: (11)Environment Queries for smarter movement, Adding Sight...9:20, (12)EQS to find bot spawn, GameMode with custom AI spawn
+assignment 4
