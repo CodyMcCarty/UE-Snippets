@@ -154,8 +154,10 @@ Steam file
 
 ---
 Get all actors  
-`TActorRange<AController>(GetWorld()) // Doesn't work with subclasses?` > `for(TActorIterator<AMyAICharacter> It(GetWorld()); It; ++It) ter* Bot = *It;` > `UGameplayStatics::GetAllActorsOfClass()`  
-`for (const AMyAICharacter* Bot : TActorRange<AMyAICharacter>(GetWorld()))`
+`TActorRange<AController>(GetWorld())` // Doesn't work with subclasses? `for (const AMyAICharacter* Bot : TActorRange<AMyAICharacter>(GetWorld()))` Tom may have updated to use this. check coding standards.      
+`for(TActorIterator<AMyAICharacter> It(GetWorld()); It; ++It) { AMyAICharacter* Bot = *It; }`  
+`UGameplayStatics::GetAllActorsOfClass()`  
+
 
 ---
 Which Client? they're all Client 0    
