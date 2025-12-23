@@ -26,6 +26,9 @@ Hows do I comm between ST and actors?
   - Payload: MakeInstancedStruct, Enter Conditions to use data. Transistions to transistion
 
 ---
+Evaluator can be used to get some other actor from the world. Then that can be an input in a task. STQuckStart. Like Resolver from MVVM   
+
+---
 EQS
 Tom: (11)Environment Queries for smarter movement, Adding Sight...9:20, (12)EQS to find bot spawn, GameMode with custom AI spawn, (15)Assignme4, more...
 
