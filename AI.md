@@ -12,7 +12,7 @@ ABP.BlendSpace.TargetWeightInterpolationSpeedPer=8.0 // this is more to do with 
 
 ---
 What are the categories in a stt statetree task? 
-Input, Output, Context(actor or AIC), regular instance editable(Bindable and TextBox. not clear if it's an input or output). 
+Input, Output, Context(actor or AIC), regular instance editable(Bindable and TextBox. not clear if it's an input or output. input & output require a binding).  
 
 ---
 How do I get the debug text to follow the actor around? Bind it's ReferencedActor.  
@@ -26,7 +26,14 @@ Hows do I comm between ST and actors?
   - Payload: MakeInstancedStruct, Enter Conditions to use data. Transistions to transistion
 
 ---
-Evaluator can be used to get some other actor from the world. Then that can be an input in a task. STQuckStart. Like Resolver from MVVM   
+Evaluator can be used to get some other actor from the world. Then that can be an input in a task. STQuckStart. Like Resolver from MVVM  
+Has TreeStart, Stop, and Tick. Doens't run when needed, runs like begin play
+
+---
+How do I debug ST?  
+Open RewindDebugger to see what state is selected and info about it (looks great) in the Rewind debugger details(a second panel).  
+There's a break on Enter/Exit & bEnable in the top right drop down, or right click state or task  
+Conditions can force eval to true.  
 
 ---
 EQS
@@ -43,4 +50,5 @@ I want to avoid BP_AIC & BP_Bot in the schema and use Epic's framework. Can I us
 Task Any & All complete: try making a task where all have to compete, this should remove a state. There's a toggle completion to avoid traps.  
 Delegates?:
   Delegate.  Time of day changes to night, ST reacts and goes to sleep.  
+    There is a Trigger on delegate. Maybe an evaluator's TreeStarted to get the delegate? like begin play
   ST broadcast a delegate and AIC reacts I guess.
