@@ -14,7 +14,7 @@ ABP.BlendSpace.TargetWeightInterpolationSpeedPer=8.0 // this is more to do with 
 
 ---
 What are the categories in a stt statetree task? 
-Input, Output, Context(actor or AIC), regular instance editable(Bindable and TextBox. not clear if it's an input or output. input & output require a binding).  
+Input, Output, Context(actor or AIC), Parameter?, regular instance editable(Bindable and TextBox. not clear if it's an input or output. input & output require a binding).  
 
 ---
 How do I get the debug text to follow the actor around? Bind it's ReferencedActor.  
