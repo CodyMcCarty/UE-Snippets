@@ -1,4 +1,4 @@
----
+
 ---
 My Spawned ai is not moving around and using the behavior tree or state tree?  
 `Character.AutoPossessAI=EAutoPossessAI::PlacedInWorldOrSpawned`. in constructor or BP defaults.  
@@ -12,28 +12,32 @@ ABP.BlendSpace.TargetWeightInterpolationSpeedPer=8.0 // this is more to do with 
 
 ---
 What are the categories in a stt statetree task? 
-Input, Output, Context(actor or AIC), regular instance editable(Bindable and TextBox). 
+Input, Output, Context(actor or AIC), regular instance editable(Bindable and TextBox. not clear if it's an input or output). 
 
 ---
-How do I get the debug text to follow the actor around?
-How do I bind to a property function like GetActorLocation(Actor) in a task, like move to, that has an "input" vector?
-How do I Send a tag event from the ST to an actor, like the reverse of ST->SendTagEvent?
-Is IGameplayTagAssetInterface used anywhere?
-Would I need a cool down in ST, and how?
-What's up with Evaluators?
-What's up with Global Tasks? Source of info?
+How do I get the debug text to follow the actor around? Bind it's ReferencedActor.  
 
 ---
-Is there a gpTag interface to allows better communication between BPs?
-How do I use the event payload?
-Hows do I comm between ST and other actors?
+Hows do I comm between ST and actors?
 - gameplay tags
-- Custom STTask
-  
-How do I communicate to ST?
+- Task & Custom STTask
+- EQS Task
 - call SendStateTreeEvent(EventTag, InstStruct Payload, FName EventOrigin = None)
-
+  - Payload: MakeInstancedStruct, Enter Conditions to use data. Transistions to transistion
 
 ---
 EQS
 Tom: (11)Environment Queries for smarter movement, Adding Sight...9:20, (12)EQS to find bot spawn, GameMode with custom AI spawn, (15)Assignme4, more...
+
+---
+How do I bind to a property function like GetActorLocation(Actor) in a task, like move to, that has an "input" vector?  
+How do I Send a tag event from the ST to an actor, like the reverse of ST->SendTagEvent?  
+Is IGameplayTagAssetInterface used anywhere?  
+Would I need a cool down in ST, and how?  
+What's up with Evaluators?  
+What's up with Global Tasks? Source of info?  
+I want to avoid BP_AIC & BP_Bot in the schema and use Epic's framework. Can I use Comp or interface?  
+Task Any & All complete: try making a task where all have to compete, this should remove a state. There's a toggle completion to avoid traps.  
+Delegates?:
+  Delegate.  Time of day changes to night, ST reacts and goes to sleep.  
+  ST broadcast a delegate and AIC reacts I guess.
