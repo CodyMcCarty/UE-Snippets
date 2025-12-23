@@ -1,3 +1,5 @@
+---
+Try to shoot for fewer states and a 100s tasks. View task as composing behavior. Many small tasks
 
 ---
 My Spawned ai is not moving around and using the behavior tree or state tree?  
