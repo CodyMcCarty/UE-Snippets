@@ -26,6 +26,7 @@ Hows do I comm between ST and actors?
 - EQS Task
 - call SendStateTreeEvent(EventTag, InstStruct Payload, FName EventOrigin = None)
   - Payload: MakeInstancedStruct, Enter Conditions to use data. Transistions to transistion
+- FStateTreePropertyRef to Read&Write [First 60 ST](https://dev.epicgames.com/community/learning/tutorials/lwnR/unreal-engine-your-first-60-minutes-with-statetree).  
 
 ---
 Evaluator can be used to get some other actor from the world. Then that can be an input in a task. STQuckStart. Like Resolver from MVVM  
