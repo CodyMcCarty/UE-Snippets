@@ -29,7 +29,8 @@ Hows do I comm between ST and actors?
 
 ---
 Evaluator can be used to get some other actor from the world. Then that can be an input in a task. STQuckStart. Like Resolver from MVVM  
-Has TreeStart, Stop, and Tick. Doens't run when needed, runs like begin play
+Has TreeStart, Stop, and Tick. Doens't run when needed, runs like begin play.  
+Evaluator - These have largely been phased out in favor of using Global Tasks. Global Tasks handle the same uses as Evaluators. [First 60 ST](https://dev.epicgames.com/community/learning/tutorials/lwnR/unreal-engine-your-first-60-minutes-with-statetree).  
 
 ---
 How do I debug ST?  
