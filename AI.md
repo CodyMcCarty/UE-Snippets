@@ -1,4 +1,7 @@
 ---
+The usual setup is for leaf states to contain the action tasks, and intermediate states to have tasks for configuring or claiming resources.
+
+---
 Try to shoot for fewer states and a 100s tasks. View task as composing behavior. Many small tasks
 
 ---
