@@ -1,4 +1,7 @@
 ---
+How to remove or disable root motion anim? AnimSequ.EnableRootMotion=False & ForceRootLock=true
+
+---
 Asserts & EDD, error driven development. Lots of bugs from not assigning vars in BP and this should be done.  
 `if(ensureMsgf(thing, TEXT("Behavior Tree is nullptr! Please assign BehaviorTree in your AI Controller."))) {}`  
 format is "The Problem! Solution"  
