@@ -11,10 +11,10 @@ My Spawned ai is not moving around and using the behavior tree or state tree?
 ---
 How to get the ai pawn to rotate better and not snappy?  
 MoveComp.UseControllerDesiredRotation=true // see doc  
-MoveComp.RotationRate.Z=360 // this is per sec. 
-OrientRotationToMovement = false
+MoveComp.RotationRate.Z=360 // this is per sec.  
+OrientRotationToMovement = false  
 Character.UseControllerRotationYaw=false  
-AIC.SetControlRotationFromPawnOrientation=false
+AIC.SetControlRotationFromPawnOrientation=false  
 ABP.BlendSpace.TargetWeightInterpolationSpeedPer=8.0 // this is more to do with foot sliding.  
 
 ---
