@@ -16,6 +16,7 @@ OrientRotationToMovement = false
 Character.UseControllerRotationYaw=false  
 AIC.SetControlRotationFromPawnOrientation=false  
 ABP.BlendSpace.TargetWeightInterpolationSpeedPer=8.0 // this is more to do with foot sliding.  
+MoveComp.UseAccelerationForPaths=true // to update anim walk/run
 
 ---
 What are the categories in a stt statetree task? 
