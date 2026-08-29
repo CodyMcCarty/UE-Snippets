@@ -1,3 +1,24 @@
+---  
+How to get dropdowns with FName, RowHandles and data tables.
+```cpp
+UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="User", meta=(RowType="/Script/Sand2607.FactionRow"))
+FDataTableRowHandle FactionRowHandle;
+
+
+UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Relation", meta=(ClampMin=-100, ClampMax=100, GetKeyOptions="SAND2607.SandFactionStatics.GetFactionPrimaryAssetNames"))
+TMap<FName, int32> Relations;
+
+UFUNCTION(BlueprintCallable, Category="Sand|Faction")
+static TArray<FName> GetFactionPrimaryAssetNames();
+
+
+// no idea how this one works but I could only select my data table named MyNewDataTable set to FFactionRow.
+UFUNCTION(BlueprintPure, Category="CodyCore", meta=(DataTablePin="FactionDataTable", ReturnDisplayName = "Data Table Row Handle"))
+static FDataTableRowHandle MakeFactionRowHandle(UDataTable* FactionDataTable, const FName RowName);
+
+```
+
+
 ---
 How to remove or disable root motion anim? AnimSequ.EnableRootMotion=False & ForceRootLock=true
 
