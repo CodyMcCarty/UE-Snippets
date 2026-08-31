@@ -11,6 +11,8 @@ TMap<FName, int32> Relations;
 UFUNCTION(BlueprintCallable, Category="Sand|Faction")
 static TArray<FName> GetFactionPrimaryAssetNames();
 
+UFUNCTION(BlueprintPure, Category="Sand|Faction") // meta=(ExpandBoolAsExecs="ReturnValue"
+bool IsPlayerFaction(UPARAM(meta=(GetOptions="SAND2607.SandFactionStatics.GetFactionRowNames")) FName FactionRowName) const;
 
 // no idea how this one works but I could only select my data table named MyNewDataTable set to FFactionRow.
 UFUNCTION(BlueprintPure, Category="CodyCore", meta=(DataTablePin="FactionDataTable", ReturnDisplayName = "Data Table Row Handle"))
