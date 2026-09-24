@@ -1,3 +1,8 @@
+
+---  
+Start setup: [Character and Animation Optimizations video](https://youtu.be/N_suMyUuork?si=E8nN16mIjwl5zECQ&t=1234) 
+
+
 ---  
 How to get dropdowns with FName, RowHandles and data tables.
 ```cpp
