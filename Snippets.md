@@ -1,7 +1,7 @@
 
 ---  
-Start setup: [Character and Animation Optimizations video](https://youtu.be/N_suMyUuork?si=E8nN16mIjwl5zECQ&t=1234) 
-
+Start setup: [Character and Animation Optimizations video](https://youtu.be/N_suMyUuork?si=E8nN16mIjwl5zECQ&t=1234)   
+I think that Live Coding these days is fine so long as "reinstancing" is disabled for it    
 
 ---  
 How to get dropdowns with FName, RowHandles and data tables.
