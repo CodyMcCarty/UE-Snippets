@@ -1,5 +1,7 @@
 notes about using llm and related tools to assist with making games.   
 
+PCG <-> llm: `PCG Primitives plugin`. I think there's a sample and\or video showcase of this.  
+
 
 Apps: Codex(gpt) & claude code app.  
 
